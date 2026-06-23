@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>shino | Portfolio</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background: #0d0d0d;
+        color: #e0e0e0;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        line-height: 1.6;
+    }
+    section {
+        padding: 80px 20px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /* Hero */
+    .hero {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: radial-gradient(circle at center, #1a1a2e, #0d0d0d);
+    }
+    .hero h1 {
+        font-size: 48px;
+        letter-spacing: 4px;
+        color: #00ffd5;
+        margin-bottom: 10px;
+    }
+    .hero p {
+        font-size: 18px;
+        color: #999;
+    }
+
+    /* Section titles */
+    h2 {
+        font-size: 28px;
+        color: #00ffd5;
+        margin-bottom: 30px;
+        border-left: 4px solid #00ffd5;
+        padding-left: 15px;
+    }
+
+    /* About */
+    .about p {
+        font-size: 16px;
+        color: #ccc;
+    }
+
+    /* Skills */
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 20px;
+    }
+    .skill-tag {
+        background: #1a1a2e;
+        border: 1px solid #00ffd5;
+        color: #00ffd5;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+
+    /* Works */
+    .work-card {
+        background: #161616;
+        border: 1px solid #2a2a2a;
+        border-radius: 12px;
+        padding: 25px;
+        margin-bottom: 20px;
+        transition: 0.3s;
+    }
+    .work-card:hover {
+        border-color: #00ffd5;
+        transform: translateY(-3px);
+    }
+    .work-card h3 {
+        color: #fff;
+        margin-bottom: 8px;
+    }
+    .work-card p {
+        color: #999;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    .work-card a {
+        color: #00ffd5;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    /* Contact */
+    .contact a {
+        color: #00ffd5;
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 16px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px;
+        color: #555;
+        font-size: 12px;
+    }
+</style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>SHINO</h1>
+    <p>情報工学科 1年生 / フリーランス志望</p>
+</div>
+
+<section class="about">
+    <h2>About</h2>
+    <p>
+        情報工学科に通う大学1年生です。フリーランスとして稼げるエンジニアになることを目標に、
+        Python・Web開発・AI活用を中心に独学で学習中です。
+        手を動かしながら実践的なスキルを積み重ねています。
+    </p>
+</section>
+
+<section class="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Flask</span>
+        <span class="skill-tag">discord.py</span>
+        <span class="skill-tag">BeautifulSoup</span>
+        <span class="skill-tag">pandas</span>
+        <span class="skill-tag">REST API</span>
+        <span class="skill-tag">Git / GitHub</span>
+        <span class="skill-tag">HTML / CSS</span>
+    </div>
+</section>
+
+<section class="works">
+    <h2>Works</h2>
+
+    <div class="work-card">
+        <h3>🌤️ 天気予報Webアプリ</h3>
+        <p>Flask製。世界中の都市名を検索すると現在の天気を表示するWebアプリ。Geocoding APIで都市名から緯度経度を取得し、Open-Meteo APIで天気データを取得。</p>
+        <a href="https://weather-app-e7ov.onrender.com" target="_blank">→ Live Demo</a>
+    </div>
+
+    <div class="work-card">
+        <h3>🤖 AI搭載 Discord Bot</h3>
+        <p>discord.py × Groq APIで構築。天気コマンドに加え、AIとの自然な会話機能を搭載したBot。</p>
+        <a href="https://github.com/hal-tgt/python-projects" target="_blank">→ GitHub</a>
+    </div>
+
+    <div class="work-card">
+        <h3>🌐 Webスクレイピングツール</h3>
+        <p>BeautifulSoupでサイトから情報を自動収集し、Excelに保存するツール。</p>
+        <a href="https://github.com/hal-tgt/python-projects" target="_blank">→ GitHub</a>
+    </div>
+
+</section>
+
+<section class="contact">
+    <h2>Contact</h2>
+    <a href="https://github.com/hal-tgt" target="_blank">GitHub</a>
+    <a href="https://x.com/jiritsushitaai" target="_blank">X (Twitter)</a>
+</section>
+
+<footer>
+    &copy; 2026 shino. All rights reserved.
+</footer>
+
+</body>
+</html>
